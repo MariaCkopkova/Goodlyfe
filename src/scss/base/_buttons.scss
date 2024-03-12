@@ -1,0 +1,56 @@
+.btn,
+.btn-outline {
+        display: inline-block;
+        min-width: remy(237);
+        height: remy(68);
+        line-height: remy(68); /* чтобы текст встал посередине*/
+        text-align: center; /* это если будет ссылка в кнопке а */
+        border-radius: remy(34);
+        font-family: inherit;
+        background-color: var(--accent);
+        color: rgb(247, 247, 252);
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: remy(0.75);
+        cursor: pointer;
+        white-space: nowrap;
+        transition: 0.3s;
+        flex-shrink: 0;
+}
+.btn:hover {
+        background-color: var(--darkAc);
+        //background-color: lighten(var(--accent), 10%);
+}
+.btn:focus {
+        background-color: var(--darkAc);
+        outline: remy(9) solid var(--outBr);
+}
+.btn-outline {
+        line-height: remy(64); /* вычитаем border в 2px*/
+        border: remy(2) solid var(--accent);
+        background-color: #fff;
+        color: var(--accent);
+        &:hover {
+                border-color: var(--darkAc);
+                color: var(--darkAc);
+        }
+        &:focus {
+                border: remy(2) solid var(--accent);
+                outline: remy(9) solid var(--outBr);
+                color: var(--accent);
+                background-color: #fff;
+        }
+        &--slim {
+                min-width: remy(166);
+                height: remy(50);
+                line-height: remy(46);
+                line-height: 1.095;
+                font-weight: 400;
+                letter-spacing: 0px;
+                border: remy(1)solid var(--accent);
+                &:focus {
+                        border: remy(1) solid var(--accent);
+                        outline: remy(5) solid var(--outBr);
+                }
+        }
+}

@@ -1,0 +1,33 @@
+mixin header
+        header.header
+                .header-nav.d-flex
+                        .header-container.d-flex
+                                a(href="#").logo Good
+                                        span lyfe
+                                nav.header-meny.d-flex(id='header-meny')
+                                        a(href="#!") Classess
+                                        a(href="#!") Timetable
+                                        a(href="#!") Clubs
+                                        a(href="#!") Nutrition
+                                        a(href="#!") Free Trial
+                                .header-nav__btn.d-flex
+                                        button.search-open.d-flex(id='searh-open')
+                                                span Search
+                                                svg.svg-search
+                                                        use(href='./img/icons/sprite/solid.svg#magnifying-glass')
+                                        button.btn-outline.btn-outline--slim Login
+                                        button.meny-toggle(id="meny-toggle")
+                                                span
+                .header-search-wrapper(id='header-search-form')
+                        .header-container
+                                form.search-form.d-flex
+                                        .form-item
+                                                input(type="text" placeholder="Search")
+                                                button(type="submit").search-btn
+                                                        svg.svg-search
+                                                                use(href='./img/icons/sprite/solid.svg#magnifying-glass')
+                                                button(type="reset").reset-btn
+                                                        svg.svg-xmark
+                                                                use(href='./img/icons/sprite/solid.svg#xmark')
+
+        //-.header-slider

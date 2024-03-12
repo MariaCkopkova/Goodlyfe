@@ -1,0 +1,138 @@
+@font-face {
+        font-family: "Manrope";
+        src: url("/fonts/Manrope/Manrope-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+}
+@font-face {
+        font-family: "Manrope";
+        src: url("/fonts/Manrope/Manrope-Medium.woff2") format("woff2");
+        font-weight: 500;
+        font-style: normal;
+}
+@font-face {
+        font-family: "Manrope";
+        src: url("/fonts/Manrope/Manrope-Semibold.woff2") format("woff2");
+        font-weight: 600;
+        font-style: normal;
+}
+@font-face {
+        font-family: "OpenSans";
+        src: url("/fonts/openSans/OpenSans-SemiBold.woff2") format("woff2");
+        font-weight: 600;
+        font-style: normal;
+}
+@font-face {
+        font-family: "Poppins";
+        src: url("/fonts/Poppins/PoppinsBold.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+}
+@font-face {
+        font-family: "Poppins";
+        src: url("/fonts/Poppins/PoppinsExtrabold.woff2") format("woff2");
+        font-weight: 800;
+        font-style: normal;
+}
+@font-face {
+        font-family: "Poppins";
+        src: url("/fonts/Poppins/PoppinsRegular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+}
+@font-face {
+        font-family: "Poppins";
+        src: url("/fonts/Poppins/PoppinsSemibold.woff2") format("woff2");
+        font-weight: 600;
+        font-style: normal;
+}
+@font-face {
+        font-family: "Times New Roman Bold";
+        src: url("/fonts/times_new_roman.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+}
+
+@function remy($pxsize) {
+        @return calc(($pxsize/16)) + rem;
+}
+*,
+*::before,
+*::after {
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: none;
+}
+
+body {
+        --accent: #e43071;
+        --subAc: #ffc1d8;
+        --outBr: #ffdae7;
+        --darkAc: #be285e;
+}
+body.green-theme {
+        --accent: #26D68A;
+        --subAc: #9BE8C7;        
+        --outBr: #9BE8C7;        
+        --darkAc: #0b9056;        
+
+}
+html {
+        scroll-behavior: smooth;
+}
+html,
+body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        background-color: #fff;
+}
+.no-scroll {
+        overflow: hidden;
+}
+a,
+a:hover {
+        text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+        padding: 0;
+        margin: 0;
+}
+img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        object-fit: cover;
+}
+button,
+input,
+button:focus,
+input:focus {
+        padding: 0;
+        border: none;
+        outline: none;
+        background: none;
+        color: inherit;
+        cursor: pointer;
+}
+a{
+        color: inherit;
+}
+.d-flex {
+        display: flex;
+        align-items: center;
+}
+
+.header-container {
+        width: 100%;
+        max-width: remy(1390);
+        margin: 0 auto;
+        padding: 0 remy(15);
+}

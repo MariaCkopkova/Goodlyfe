@@ -1,0 +1,72 @@
+.logo {
+        font-size: remy(40);
+        font-weight: 800;
+        line-height: 1.095;
+        margin-right: auto;
+        span {
+                color: var(--subAc);
+        }
+        @media (max-width: remy(1439)) {
+                font-size: remy(32);
+        }
+        @media (max-width: remy(574)) {
+                font-size: remy(22);
+        }
+
+}
+.header {
+        flex-shrink: 0;
+        &-nav {
+                background-color: var(--accent);
+                color: #fff;
+                position: relative;
+                z-index: 13;
+                height: remy(101);
+                justify-content: space-between;
+                .header-container {
+                        justify-content: space-between;
+                }
+                @media (max-width: remy(991)) {
+                        height: 5rem;
+                        height: remy(60);
+                }
+                @media (max-width: remy(574)) {
+                }
+                &__btn {
+                        display: flex;
+                        column-gap: remy(37);
+                        height: remy(50);
+                        margin-left: remy(73);
+                        .search-open {
+                                font-family: "Poppins";
+                                height: remy(50);
+                                column-gap: remy(10);
+                                font-size: remy(16);
+                                transition: 0.3s;
+                                &:hover {
+                                        opacity: 0.7;
+                                }
+                                
+                                @media (max-width: remy(574)) {
+                                        span {
+                                                display: none;
+                                        }
+                                }
+                        }
+
+                        @media (max-width: remy(1439)) {
+                                column-gap: 2.5rem;
+                                margin-left: remy(50);
+                        }
+                        @media (max-width: remy(1199)) {
+                                column-gap: 1.5rem;
+                                margin-left: 1.5rem;
+                        }
+                        @media (max-width: remy(991)) {
+                                .btn-outline {
+                                        display: none;
+                                }
+                        }
+                }
+        }
+}

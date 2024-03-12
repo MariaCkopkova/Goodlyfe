@@ -1,0 +1,17 @@
+//-mixin acc(id='accordionExample', accItems=accordionItems)
+//-        .accordion(id=`${id}`)
+//-                each item, index in accItems
+//-                        .accordion-item
+//-                                h2.accordion-header(id=`heding_${id}${index}`)
+//-                                        button.accordion-button.collapsed(
+//-                                                type='button' data-bs-toggle='collapse'
+//-                                                data-bs-target=`#panel_${id}${index}`
+//-                                                aria-expanded='false'
+//-                                                aria-controls=`panel_${id}${index}`)
+//-                                                = item.headingContent
+//-                                .accordion-collapse.collapse(
+//-                                        aria-labelledby=`heading_${id}${index}`
+//-                                        data-bs-parent=`#${id}`
+//-                                        id=`panel_${id}${index}`)
+//-                                        .accordion-body
+//-                                                =  item.bodyContent

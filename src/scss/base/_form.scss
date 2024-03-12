@@ -1,0 +1,45 @@
+.form-item {
+        position: relative;
+        input {
+                display: block;
+                width: 100%;
+                height: remy(50);
+                padding-inline: remy(50);
+                border: remy(1) solid var(--sec3);
+                border-radius: remy(5);
+                font-size: 1rem;
+                color: var(--sec2);
+        }
+        input::placeholder {
+                font-size: 1rem;
+                color: var(--sec4);
+        }
+}
+.search-form {
+        width: 100%;
+        column-gap: remy(70);
+        .form-item {
+                width: 100%;
+        }
+        .search-btn,
+        .reset-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 2;
+        }
+        .search-btn {
+                left: remy(10);
+                .svg-search {
+                        width: remy(25);
+                        height: remy(25);
+                        fill: var(--accent);
+                }
+        }
+        .reset-btn {
+                right: remy(13);
+        }
+        input {
+                padding-inline: remy(40);
+        }
+}
