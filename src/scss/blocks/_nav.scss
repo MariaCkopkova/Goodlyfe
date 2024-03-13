@@ -28,18 +28,20 @@
         }
 }
 #header-meny {
-        position: fixed;
-        transform: translateX(100%);
-        transition: .3s;
-        z-index: 10;
-        top: remy(63);
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(255, 255, 255, .7);
-        transition: transform .3s ease;
-        &.active {
-                display: flex;
-                transform: translateX(0);
+        @media(max-width: remy(991)){
+                position: fixed;
+                transform: translateX(100%);
+                transition: .3s;
+                z-index: 10;
+                top: remy(63);
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(255, 255, 255, .7);
+                transition: transform .3s ease;
+                &.active {
+                        display: flex;
+                        transform: translateX(0);
+                }
         }
 }
