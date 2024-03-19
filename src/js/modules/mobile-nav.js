@@ -3,8 +3,8 @@ function mobileNav() {
         const mobileMeny = document.querySelector('#header-meny')
         const bodyEI = document.body;
         if (menyToggle) {
+                /**клик по иконке бургер */
                 menyToggle.addEventListener('click', () => {
-                        console.log("hi")
                         if (menyToggle.classList.contains('active')) {
                                 menyToggle.classList.remove('active');
                                 mobileMeny.classList.remove('active');
@@ -14,6 +14,12 @@ function mobileNav() {
                                 mobileMeny.classList.add('active');
                                 bodyEI.classList.add('no-scroll');
                         }
+                });
+                /**клик по мобильному меню */
+                mobileMeny.addEventListener('click', () => {
+                        menyToggle.classList.remove('active');
+                        mobileMeny.classList.remove('active');
+                        bodyEI.classList.remove('no-scroll');
                 });
         }
 }

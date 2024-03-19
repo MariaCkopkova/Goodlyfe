@@ -27,6 +27,7 @@
     "prettier": "^3.2.5",
     "sass": "^1.70.0",
     "style-loader": "^3.3.4",
+    "swiper": "^11.0.7",
     "webpack-stream": "^7.0.0"
   },
   "babel": {
@@ -40,6 +41,5 @@
   },
   "browserslist": [
     "last 16 version"
-
   ]
 }
