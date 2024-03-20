@@ -1,0 +1,80 @@
+.result {
+        padding-block: remy(94) remy(222);
+        @media(max-width:remy(1199)){
+                padding-block: remy(50) remy(60);
+        }
+        @media(max-width:remy(767)){
+                padding-block: remy(35) remy(23);
+        }
+        &-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: remy(15);
+                @media(max-width: remy(767)){
+                        flex-direction: column;
+                        align-items: flex-start;
+                }
+        }
+        &__img {
+                width: remy(450);
+                aspect-ratio: 9/10;
+                position: relative;
+                flex-shrink: 0;
+                &-bottom {
+                        position: absolute;
+                        bottom: 0;
+                        right: remy(10);
+                        @media(max-width: remy(767)){
+                                right: 0;
+                        }
+                        img {
+                                width: remy(240);
+                                aspect-ratio: 2/3;
+                        }
+                }
+                &-top {
+                        img {
+                                width: remy(349);
+                                aspect-ratio: 7/8;
+                        }
+                }
+                @media (max-width: remy(991)) {
+                        width: remy(360);
+                        .result__img-top img{width: remy(280);}
+                        .result__img-bottom img{width: remy(200);}
+                }
+                @media (max-width: remy(767)) {
+                        width: remy(262);
+                        height: remy(310);
+                        .result__img-top img{width: remy(176);height: remy(248);}
+                        .result__img-bottom img{width: remy(146);height: remy(218);}
+                }
+        }
+        &__desc {
+                flex-grow: 1;
+                max-width: remy(540);
+                margin-bottom: remy(21);
+                @media (max-width: remy(1199)){
+                        margin-bottom: 0;  
+                }
+                .h4 {
+                        color: var(--accent);
+                        padding-bottom: remy(6);
+                        flex-shrink: 0;
+                        @media (max-width: remy(767)) {
+                                margin-bottom: remy(11);
+                        }
+                }
+                .text {
+                        color: var(--sec2);
+                        line-height: remy(37);
+                        margin-bottom: remy(28);
+                        @media (max-width: remy(767)) {
+                                line-height: remy(32);
+                                margin-bottom: remy(48);
+                                padding-right: remy(20);
+                        }
+                }
+        }
+}

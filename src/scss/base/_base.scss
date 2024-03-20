@@ -72,11 +72,10 @@ body {
         --darkAc: #be285e;
 }
 body.green-theme {
-        --accent: #26D68A;
-        --subAc: #9BE8C7;        
-        --outBr: #9BE8C7;        
-        --darkAc: #0b9056;        
-
+        --accent: #26d68a;
+        --subAc: #9be8c7;
+        --outBr: #9be8c7;
+        --darkAc: #0b9056;
 }
 html {
         scroll-behavior: smooth;
@@ -124,7 +123,7 @@ input:focus {
         cursor: pointer;
         font-family: inherit;
 }
-a{
+a {
         color: inherit;
 }
 .d-flex {
@@ -138,6 +137,14 @@ a{
         margin: 0 auto;
         padding: 0 remy(15);
 }
-.accent-span {
-        color: var(--subAc)!important;
+
+.container {
+        width: 100%;
+        max-width: remy(1260);
+        margin: 0 auto;
+        padding-inline: remy(50);
+        @media(max-width: remy(767)){
+                max-width: remy(737);
+                padding-inline: remy(15);
+        }
 }
