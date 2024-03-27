@@ -143,6 +143,9 @@ a {
         max-width: remy(1260);
         margin: 0 auto;
         padding-inline: remy(50);
+        @media (max-width: remy(991)){
+                padding-inline: remy(35);
+        }
         @media(max-width: remy(767)){
                 max-width: remy(737);
                 padding-inline: remy(15);

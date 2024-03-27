@@ -1,0 +1,15 @@
+mixin slider-2
+        .section-content
+                        .section-content__title
+                                h2.h2 Become more than you are.
+                                p.subtitle Staying active is great fun and keeps you healthy.#[br]Check out how you can join in.
+                                a(href="!#")
+                                        +btn('Let’s do it!', '', type='button')
+                        .swiper.slider
+                                .swiper-wrapper
+                                        +slider('banner-02')
+                                        +slider('banner-01')
+                                        +slider('banner-03')
+                                        +slider('banner-04')
+                                        +slider('banner-03')
+                                .swiper-pagination
