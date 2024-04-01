@@ -1,0 +1,16 @@
+mixin card(title, text, img, name)
+        .card
+                h3.h5 #{title}Kg lost!
+                .card__icon
+                        svg.svg-quotes
+                                use(href="./img/icons/sprite/sprite.svg#svg-quotes")
+                .card__text
+                        p #{text}
+                .card__footer
+                        .card__avatar
+                                img(src="./img/stories/avtr-0"+ img +".jpeg" alt="Avatar")
+                        .card__name
+                                p #{name}
+                                span Mother of two
+
+

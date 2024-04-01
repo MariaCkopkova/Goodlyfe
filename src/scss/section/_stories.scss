@@ -1,0 +1,204 @@
+.stories {
+        padding-block: remy(156) remy(80);
+        background: linear-gradient(180deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%), rgb(244, 227, 233);
+        @media (max-width: remy(767)){
+                padding-block: remy(64) remy(38);
+        }
+        &-container {
+                width: 100%;
+                max-width: remy(955);
+                margin: 0 auto;
+                @media (max-width: remy(991)){
+                        padding-inline: remy(16);
+                        overflow: hidden;
+                }
+                @media (max-width: remy(767)){
+                        padding-inline: remy(28);
+                        overflow: hidden;
+                }
+        }
+        &__title {
+                margin-bottom: remy(27);
+                @media (max-width: remy(767)){padding-left: remy(3); margin-bottom: remy(10);}
+                .h3 {
+                        padding-left: remy(3);
+                        line-height: 1.19;
+                        letter-spacing: 0;
+                        margin-bottom: remy(12);
+                        @media (max-width: remy(767)){
+                                font-size: remy(26);
+                                margin-bottom: remy(6.53);
+                        }
+                }
+                p {
+                        font-size: remy(18);
+                        font-weight: 400;
+                        line-height: remy(27);
+                        @media (max-width: remy(767)){
+                                font-size: remy(9);
+                        }
+                }
+        }
+        &__cards {
+                position: relative;
+                padding-left: remy(97);
+                padding-bottom: remy(68);
+                display: flex;
+                align-items: flex-start;
+                column-gap: remy(33);
+                @media (max-width: remy(991)) {
+                        align-items: stretch;
+                        column-gap: remy(27);
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        width: calc( 50% + 50vw);
+                        overflow: hidden;
+                        overflow-x: auto;
+                        scrollbar-width: none;
+                        &::-webkit-scrollbar{display: none;}
+                }
+                .card__avatar {
+                        padding-right: remy(17);
+                }
+                img {
+                        flex-shrink: 0;
+                        border-radius: 50%;
+                        width: remy(59);
+                        height: remy(57);
+                }
+        }
+}
+.card {
+        flex-shrink: 0;
+        width: remy(349);
+        border-radius: remy(10);
+        box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.18);
+        background: rgb(255, 255, 255);
+        padding: remy(35) remy(32) remy(38) remy(27);
+
+        &:nth-child(2) {
+                width: remy(449);
+                padding: remy(48) remy(32) remy(38) remy(35);
+                margin-top: remy(-141);
+                .h5 {
+                        margin-bottom: remy(17);
+                }
+                .card__text {
+                        padding-left: remy(30);
+                }
+                .card__footer {
+                        padding-left: remy(30);
+                        padding-top: remy(15);
+                }
+                @media (max-width: remy(991)) {
+                        margin-top: 0;
+                }
+        }
+        &:nth-child(3) {
+                position: absolute;
+                right: remy(100);
+                bottom: 0;
+                width: remy(351);
+                padding: remy(31) remy(31) remy(32) remy(35);
+
+                .h5 {
+                        margin-bottom: remy(32);
+                }
+                .card__text {
+                        padding-left: remy(29);
+                }
+                .card__footer {
+                        padding-left: remy(30);
+                        padding-top: remy(17);
+                }
+                @media (max-width: remy(991)) {
+                        position: relative;
+                        right: auto;
+                        bottom: auto;
+                        //margin-right: remy(20);
+                }
+        }
+        .h5 {
+                color: var(--accent);
+                margin-bottom: remy(29);
+        }
+        &__icon {
+                position: absolute;
+        }
+        &__text {
+                position: relative;
+                padding-left: remy(37);
+                color: var(--sec2);
+                font-size: remy(18);
+                font-weight: 400;
+                line-height: 1.78;
+        }
+        &__footer {
+                padding-top: remy(20);
+                padding-left: remy(39);
+                display: flex;
+                align-items: flex-end;
+        }
+        &__name {
+                p {
+                        font-size: remy(18);
+                        font-weight: 600;
+                }
+                span {
+                        font-size: remy(14);
+                        font-weight: 400;
+                        color: #969bab;
+                }
+        }
+}
+.card,
+.card:nth-child(2),
+.card:nth-child(3) {
+        @media (max-width: remy(991)) {
+                padding: remy(24) remy(15) remy(26) remy(19);
+                width: remy(243);
+                display: flex;
+                flex-direction: column;
+                .h5 {
+                        width: 100%;
+                        font-size: remy(25);
+                        margin-bottom: remy(20);
+                }
+                .card__icon{
+                        width: 100%;
+                        top: remy(65);
+                        svg.svg-quotes {
+                                width: remy(20);
+                        }
+                } 
+
+                .card__text {
+                        width: 100%;
+                        flex-grow: 1;
+                        font-size: remy(13);
+                        font-weight: 400;
+                        line-height: remy(22);
+                        padding-left: remy(25);
+                }
+                .card__avatar {
+                        img {
+                                width: remy(41);
+                                height: remy(40);
+                        }
+                }
+                .card__footer {
+                        width: 100%;
+                        padding-top: remy(5);
+                        padding-left: remy(25);
+                }
+                .card__name {
+                        //line-height: remy(23.69);
+                        p {
+                                font-size: remy(12.54);
+                        }
+                        span {
+                                font-size: remy(9.75);
+                        }
+                }
+        }
+}
