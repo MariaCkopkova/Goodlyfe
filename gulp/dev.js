@@ -1,5 +1,4 @@
 const gulp = require("gulp");
-//const fileInclude = require("gulp-file-include");
 const pugs = require("gulp-pug");
 const sass = require("gulp-sass")(require("sass"));
 var sassGlob = require('gulp-sass-glob');
@@ -79,7 +78,6 @@ gulp.task("images:dev", function () {
     .pipe(gulp.dest("./build/img/"));
 });
 
-// Копируем шрифты из папки fonts в папку dist/fonts
 gulp.task("fonts:dev", function () {
   return gulp.src("./src/fonts/**/*")
   .pipe(changed('./build/fonts'))

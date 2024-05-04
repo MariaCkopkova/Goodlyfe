@@ -109,7 +109,6 @@ gulp.task('images:docs', function () {
     .pipe(gulp.dest('./docs/img/'));
 });
 
-// Копируем шрифты из папки fonts в папку dist/fonts
 gulp.task('fonts:docs', function () {
   return gulp
     .src('./src/fonts/**/*')

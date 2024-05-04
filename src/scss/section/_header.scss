@@ -1,17 +1,8 @@
 .logo {
-        //font-size: remy(40);
         font-size: clamp(1.38rem, calc(1.05rem + 1.61vw), 2.5rem);
         font-weight: 800;
         line-height: 1.095;
         margin-right: auto;
-
-        //@media (max-width: remy(1439)) {
-        //        font-size: remy(32);
-        //}
-        //@media (max-width: remy(574)) {
-        //        font-size: remy(22);
-        //}
-
 }
 .header {
         flex-shrink: 0;
@@ -27,13 +18,13 @@
                 }
                 @media (max-width: remy(991)) {
                         height: 5rem;
-                        height: remy(60);
+                        height: remy(64);
                 }
                 @media (max-width: remy(574)) {
                 }
                 &__btn {
                         display: flex;
-                        column-gap: remy(37);
+                        column-gap: remy(40);
                         height: remy(50);
                         margin-left: remy(73);
                         .search-open {
@@ -44,8 +35,7 @@
                                 transition: 0.3s;
                                 &:hover {
                                         opacity: 0.7;
-                                }
-                                
+                                }                                
                                 @media (max-width: remy(574)) {
                                         span {
                                                 display: none;

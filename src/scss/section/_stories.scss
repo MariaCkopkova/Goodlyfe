@@ -1,13 +1,15 @@
 .stories {
-        padding-block: remy(156) remy(80);
+        padding-block: remy(147) remy(80);
         background: linear-gradient(180deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%), rgb(244, 227, 233);
+        @media (max-width: remy(991)){padding-block: remy(0) remy(60);}
         @media (max-width: remy(767)){
-                padding-block: remy(64) remy(38);
+                padding-block: remy(64) remy(45);
         }
         &-container {
                 width: 100%;
                 max-width: remy(955);
                 margin: 0 auto;
+                padding-left: remy(10);
                 @media (max-width: remy(991)){
                         padding-inline: remy(16);
                         overflow: hidden;
@@ -18,9 +20,10 @@
                 }
         }
         &__title {
+                color: var(--sec2);
                 margin-bottom: remy(27);
                 @media (max-width: remy(767)){padding-left: remy(3); margin-bottom: remy(10);}
-                .h3 {
+                .h3 {  
                         padding-left: remy(3);
                         line-height: 1.19;
                         letter-spacing: 0;

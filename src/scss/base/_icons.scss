@@ -3,9 +3,67 @@
         height: remy(20);
         fill: #fff;
         transform: rotate(90deg);
+        @media (max-width: remy(576)){
+                width: remy(15);
+                height: remy(15);
+        }
 }
 .svg-xmark {
         width: remy(25);
         height: remy(25);
         fill: var(--sec3);
+}
+.svg-facebook {
+        width: remy(15);
+        height: remy(30);
+        fill: var(--accent);
+        &:hover{
+                fill:var(--darkAc)
+        }
+}
+.svg-quotes {
+        width: remy(25);
+        height: remy(20);
+        fill: var(--accquotes);
+}
+.d-flex {
+        display: flex;
+        align-items: center;
+}
+.y-tube{
+        width: remy(25);
+        height: remy(29);
+        fill: var(--accent);
+        &:hover{
+                fill:var(--darkAc)
+        }
+}
+.svg-inst {
+        width: remy(30);
+        height: remy(30);
+        fill: var(--accent);
+        &:hover{
+                fill:var(--darkAc)
+        }
+}
+.twitter {
+        margin-top: remy(6);
+        width: remy(12);
+        height: remy(11);
+}
+.svg-y-tube {
+        margin-top: remy(6);
+        width: remy(14);
+        height: remy(11);
+}
+.mail, .inst{
+        margin-top: remy(5);
+        width: remy(14);
+        height: remy(14);
+}
+
+.svg-message, .svg-phone, .svg-map {
+        width: remy(24);
+        height: remy(24);
+        fill: var(--accent);
 }

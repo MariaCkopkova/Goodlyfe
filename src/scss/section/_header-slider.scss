@@ -2,7 +2,6 @@
 ,.slider__item
  {
         position: relative;
-        padding-bottom: remy(3);
         height: calc(100vh - remy(110)); /* обязательно ставить пробел от знака "-"*/
         max-height: remy(1100);
    
@@ -27,7 +26,7 @@
                 height: remy(500);
         }
         @media (max-width: remy(899)) {
-                height: remy(410);
+                height: remy(415);
         }
 }
 .header-content__svg {
@@ -89,9 +88,9 @@
         }
 }
 .header-content__title {
-        padding-inline: remy(16);
+        //padding-inline: remy(16);
         position: absolute;
-        top: 51%;
+        top: 52%;
         left: 50%;
         z-index: 3;
         transform: translate(-50%, -50%);
@@ -101,13 +100,14 @@
         }
         .h1 {
                 color: #fff;
-                margin-bottom: remy(21);
+                margin-bottom: remy(25);
                 font-size: clamp(2rem, calc(1.07rem + 4.63vw), 4.38rem);
                 line-height: 1.1;
                 @media (max-width:remy(767)){
                         margin-bottom: remy(20);
                 }
                 @media (max-width: remy(470)) {
+                        padding-inline: 0;
                         line-height: remy(36);
                 }
         }

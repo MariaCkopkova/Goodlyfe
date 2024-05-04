@@ -39,8 +39,8 @@ mixin header
                                 path(d='M0 9.89162C0 9.89162 91.6953 -9.79156 160 9.89162C228.305 29.5748 320 0 320 0V25H0' fill='white')
                 .header-content__title
                         h1.h1 Welcome to#[br] Good#[span.accent-span lyfe]&nbsp;Gyms
-                        +btn('See the benefits', '', type='button')
-                                a(href="!#")
+                        a(href="!#")
+                                +btn('See the benefits', '', type='button')
                 .swiper.slider
                         .swiper-wrapper
                                 +slider('banner-01')
@@ -49,8 +49,3 @@ mixin header
                                 +slider('banner-04')
                                 +slider('banner-03')
                         .swiper-pagination
-
-
-
-        //-img(src="../../img/icons/header/bottom.svg" alt="").img-bottom 
-        //-img(src="img/banners/bottom.png" alt="Bottom")

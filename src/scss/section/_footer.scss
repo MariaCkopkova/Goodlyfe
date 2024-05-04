@@ -1,8 +1,188 @@
 .footer {
-   padding: 100px 0;
-   font-size: 30px;
-   color: #b1b0b0;
-   text-align: center;
-   font-family: "Manrope";
-   font-weight: 600;
+        font-family: "Manrope";
+        font-size: remy(14);
+        padding-block: remy(99) remy(24);
+        padding-left: remy(45);
+        background-color: #000;
+        color: #d9dbe1;
+        @media (max-width: remy(1213)) {
+                .container {
+                        padding-inline: remy(30);
+                }
+        }
+        @media (max-width: remy(991)) {
+                padding-block: remy(40) remy(30);
+                padding-left: 0;
+        }
+
+        &__top {
+                display: grid;
+                grid-template-columns: repeat(4, auto);
+                align-items: flex-start;
+                margin-bottom: remy(100);
+                @media (max-width: remy(991)) {
+                        grid-template-columns: repeat(2, auto);
+                }
+                @media (max-width: remy(576)) {
+                        grid-template-columns: repeat(1, auto);
+                        margin-bottom: remy(35);
+                }
+                .logo {
+                        font-family: "Poppins";
+                        font-size: remy(25.67);
+                        font-weight: 800;
+                        line-height: 1.095;
+                        color: white;
+                        .accent {
+                                color: var(--accent);
+                        }
+                }
+                .social__links {
+                        display: flex;
+                }
+                .footer-img {
+                        width: remy(24);
+                        height: remy(24);
+                        border-radius: 50%;
+                        background-color: rgba(255, 255, 255, 0.1);
+                        text-align: center;
+                        &:not(:last-child) {
+                                margin-right: remy(16);
+                        }
+                        transition: background-color 0.3s ease;
+                        &:hover {
+                                background-color: var(--accent);
+                        }
+                }
+        }
+}
+.footer__top {
+        &-column {
+                width: remy(276);
+                @media (max-width: remy(1199)) {
+                        width: remy(250);
+                }
+                @media (max-width: remy(1135)) {
+                        width: remy(200);
+                }
+        }
+        &-column:first-child {
+                width: remy(260);
+                margin-right: remy(16);
+                @media (max-width: remy(991)) {
+                        width: remy(260);
+                }
+                .footer__top-list {
+                        p {
+                                margin-bottom: remy(24);
+                        }
+                }
+        }
+        &-column:nth-child(3) {
+                margin-right: remy(-16);
+                @media (max-width: remy(576)) {
+                        display: none;
+                }
+        }
+        &-title {
+                font-size: remy(20);
+                font-weight: 500;
+                line-height: 1.5;
+        }
+        &-list {
+                margin-top: remy(25);
+                font-size: remy(14);
+                font-weight: 400;
+                line-height: 1.71;
+        }
+        &-column:last-child {
+                .footer__top-item:not(:last-child) {
+                        margin-bottom: remy(22);
+                }
+                .footer__top-svg {
+                        display: flex;
+                        column-gap: remy(8);
+                        align-items: center;
+                        &:last-child {
+                                line-height: 1.3;
+                        }
+                }
+        }
+}
+.footer__top-column:nth-child(2),
+.footer__top-column:nth-child(3) {
+        .footer__top-item:not(:last-child) {
+                margin-bottom: remy(12);
+        }
+}
+
+.footer__top-column:nth-child(3),
+.footer__top-column:nth-child(4) {
+        @media (max-width: remy(991)) {
+                margin-top: remy(42);
+        }
+}
+.footer__top-column:nth-child(2) {
+        @media (max-width: remy(576)) {
+                margin-bottom: remy(265);
+                .footer__top-title {
+                        margin-top: remy(42);
+                }
+        }
+}
+.footer__bottom {
+        column-gap: remy(474);
+        align-items: center;
+        @media (max-width: remy(1290)) {
+                column-gap: remy(260);
+        }
+        @media (max-width: remy(1076)) {
+                column-gap: remy(150);
+        }
+        @media (max-width: remy(991)) {
+                flex-direction: column;
+        }
+        @media (max-width: remy(576)) {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+        }
+        p {
+                font-family: "Manrope";
+                font-weight: 400;
+                line-height: 1.7;
+                @media (max-width: remy(991)) {
+                        margin-left: remy(8);
+                }
+        }
+        .privacy {
+                display: flex;
+                justify-content: center;
+                p:not(:last-child) {
+                        &::after {
+                                content: "|";
+                                margin-inline: remy(8);
+                        }
+                }
+        }
+}
+@media (max-width: remy(576)) {
+        .footer__bottom.d-flex .privacy p:not(:last-child) {
+                &::after {
+                        content: "";
+                }
+        }
+        .footer__bottom.d-flex .privacy p:nth-child(odd) {
+                &::after {
+                        content: "|";
+                        margin-inline: remy(5);
+                }
+        }
+        .footer__bottom .privacy {
+                width: remy(265);
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                margin-bottom: remy(15);
+                justify-items: center;
+                p:last-child {margin-left: remy(-95);}
+        }
 }

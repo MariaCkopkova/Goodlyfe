@@ -1,4 +1,6 @@
 //document.addEventListener("DOMContentLoaded");
+import scroll from "./modules/scroll";
+scroll();
 import mobileNav from "./modules/mobile-nav";
 mobileNav();
 import searchForm from "./modules/search";
@@ -8,10 +10,7 @@ searchForm();
 import Swiper from 'swiper';
 import { Navigation, Pagination, EffectFade } from 'swiper/modules';
 import '../../node_modules/swiper/swiper-bundle.min.css';
-//import '../../node_modules/swiper/modules/effect-fade.min.mjs';
 
-//import 'swiper/css/navigation';
-//import 'swiper/css/pagination';
 const swiper = new Swiper('.slider', {
   modules: [Navigation, Pagination, EffectFade],
   spaceBetween: 30,
