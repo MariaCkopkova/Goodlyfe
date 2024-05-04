@@ -1,2 +1,2 @@
 # Goodlyfe
-[демо](https://mariackopkova.github.io/gulp-pug/)
+[демо](https://mariackopkova.github.io/Goodlyfe/)
